@@ -11,10 +11,8 @@ class Dog
   
   def self.all 
     @@all.each do |name|
-     new_array = []
-
-      dog_name = new_array[1].chomp 
-      puts "#{dog_name}"
+     name.gsub!(/.*?(?=")/im, "")
+      puts "#{name}"
     end 
   end 
   
