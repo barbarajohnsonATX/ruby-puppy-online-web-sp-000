@@ -12,9 +12,8 @@ class Dog
   end 
   
   def self.all 
-    @@all.each do |name|
-     new_name = name.to_s.gsub!(/.*?(?=")/im, "")
-      puts "#{new_name}"
+    @@all.each do |dog|
+      puts dog.name 
     end 
   end 
   
