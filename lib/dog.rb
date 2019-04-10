@@ -14,7 +14,6 @@ class Dog
   def self.all 
     @@all.each do |name|
      new_name = name.to_s.gsub!(/.*?(?=")/im, "")
-     binding.pry
       puts "#{new_name}"
     end 
   end 
