@@ -11,9 +11,8 @@ class Dog
   
   def self.all 
     @@all.each do |name|
-          new_array = []
+     new_array = []
 
-      new_array = name.split('=')
       dog_name = new_array[1].chomp 
       puts "#{dog_name}"
     end 
